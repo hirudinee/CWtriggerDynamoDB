@@ -4,7 +4,7 @@ exports.handler = function (event, context, callback) {
 	ddb.get({
 		TableName: 'TestHiru',
 		Key: {
-			'ID': '001'
+			'ID1': '002'
 		}
 	}, function (err, data) {
 		if (err) {
