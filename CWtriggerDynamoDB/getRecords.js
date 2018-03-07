@@ -3,12 +3,14 @@ const ddb = new AWS.DynamoDB.DocumentClient();
 exports.handler = function (event, context, callback) {
 	ddb.get({
 		TableName: 'TestHiru',
-		Key: { 'ID': 'ID' }
+		Key: {
+			'ID': '001'
+		}
 	}, function (err, data) {
 		if (err) {
-			callback('error',err);
+			callback('error', err);
 		} else {
-			callback('Data',data);
+			callback('Data', data);
 		}
 	});
 
