@@ -8,11 +8,11 @@ exports.handler = function (event, context, callback) {
 		}
 	}, function (err, data) {
 		if (err) {
-			callback('error', err);
-			console.log('Error : ',err)
+			callback( err,'error');
+			console.log('Error : ',err);
 		} else {
-			callback('Data', data);
-			console.log('success : ',data)
+			callback( data,'Data');
+			console.log('success : ',data);
 		}
 	});
 
