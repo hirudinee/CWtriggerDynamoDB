@@ -5,7 +5,7 @@ exports.handler = function (event, context, callback) {
 	ddb.update({
 		TableName: 'TestHiru',
 		Key: {
-			'ID': '002'
+			'ID': '001'
 		},
 		ExpressionAttributeNames: {
 			'#id': 'ID'
